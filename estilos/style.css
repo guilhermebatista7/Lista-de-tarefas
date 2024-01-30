@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fim do reset*/
+
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(0, 98, 255);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section button, input[type=text] {
+    height: 35px;
+    border-radius: 3px;
+}
+
+section > input {
+    width: 60vw;
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+section > button {
+    background-color: rgba(128, 128, 128, 0.54);
+}
+
+#tarefas_adicionadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarefas_adicionadas .conteudo {
+    background-color: rgba(100, 148, 237, 0.434);
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 2px; 
+    height: 30px;
+}
+
+#tarefas_adicionadas p {
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+#tarefas_adicionadas input[type = checkbox] {
+    position: relative;
+    top: 5.5px;  
+    width: 20px;
+    height: 20px;
+}
+
+#tarefas_adicionadas #deleta {
+    width: 60px;
+    height: 20px;
+    margin-left: 7px;
+}
+
+
