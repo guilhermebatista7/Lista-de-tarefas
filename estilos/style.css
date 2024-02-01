@@ -57,15 +57,16 @@ body, html {
 
 header {
     background-color: rgb(0, 98, 255);
-    height: 100px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 header > h1 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
 }
 
 section {
@@ -87,7 +88,14 @@ section > input {
 
 section > button {
     background-color: rgba(128, 128, 128, 0.54);
+    cursor: pointer;
 }
+
+section > button:hover{
+    background-color: rgb(112, 111, 111);
+    transition-duration: 0.3s;
+}
+
 
 #tarefas_adicionadas {
     display: flex;
@@ -97,35 +105,47 @@ section > button {
 }
 
 #tarefas_adicionadas .conteudo {
+    position: relative;
     background-color: rgba(100, 148, 237, 0.434);
     padding: 5px;
-    width: 300px;
+    width: 270px;
     border-radius: 2px;
     margin-bottom: 2px; 
-    height: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #tarefas_adicionadas p {
-    font-size: 18px;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    font-size: 17px;
+    margin: 0;
 }
 
 #tarefas_adicionadas input[type = checkbox] {
     position: relative;
-    top: 5.5px;  
+    top: 3px;  
     width: 20px;
     height: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 #tarefas_adicionadas #deleta {
-    position: relative;
+    position: absolute;
+    right: calc(100% - 230px);
     width: 60px;
     height: 20px;
-    margin-left: calc(100% - 100px);
-    top: -18px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.84);
+    border: 1.5px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#tarefas_adicionadas #deleta:hover {
+    background-color: red;
+    border: 1.75px solid black;
 }
 
 footer{
@@ -135,10 +155,17 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: cornflowerblue;
-    height: 100px;
+    height: 140px;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    position: sticky;
+    top: 100vh;
+}
+
+footer span {
+    color: white;
+    text-shadow: 1px 1px 4px black;
 }
 
 footer a {
@@ -151,6 +178,7 @@ footer a {
 
 footer a:hover {
     color: rgba(228, 223, 223, 0.611);
+    transition-duration: 0.3s;
 }
 
 

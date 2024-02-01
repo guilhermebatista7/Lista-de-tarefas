@@ -1,5 +1,5 @@
 function adicionaTarefa() {
-    let input = document.getElementById('tarefa').value;
+    var input = document.getElementById('tarefa').value;
     if(!input){
         alert('Digite uma tarefa')
     }else{ 
@@ -7,9 +7,10 @@ function adicionaTarefa() {
         let lista = document.getElementById('tarefas_adicionadas');
         let novoItem = document.createElement('div');
         novoItem.className = 'conteudo';
-        novoItem.innerHTML = '<p id="item_lista"><input type="checkbox"/>'+input+'<button onclick="deletar(this)" id="deleta">Deletar</button></p>';
+        novoItem.innerHTML = '<input onclick="tarefaFeita(this)" type="checkbox"/><p id="item_lista">'+input+'<button onclick="deletar(this)" id="deleta">Deletar</button></p>';
         lista.appendChild(novoItem);
     }
+    document.getElementById('tarefa').value = '';
 }
 
 function deletar(elementoDeleta) {
