@@ -99,6 +99,7 @@ section > button {
 #tarefas_adicionadas .conteudo {
     background-color: rgba(100, 148, 237, 0.434);
     padding: 5px;
+    width: 300px;
     border-radius: 2px;
     margin-bottom: 2px; 
     height: 30px;
@@ -109,7 +110,7 @@ section > button {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -40%);
 }
 
 #tarefas_adicionadas input[type = checkbox] {
@@ -120,8 +121,38 @@ section > button {
 }
 
 #tarefas_adicionadas #deleta {
+    position: relative;
     width: 60px;
     height: 20px;
+    margin-left: calc(100% - 100px);
+    top: -18px;
 }
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+footer a {
+    font-size: 16px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+footer a:hover {
+    color: rgba(228, 223, 223, 0.611);
+}
+
+
 
 
