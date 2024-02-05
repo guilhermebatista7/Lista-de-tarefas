@@ -84,6 +84,7 @@ section > input {
     width: 60vw;
     font-size: 18px;
     margin-right: 2px;
+    text-align: center;
 }
 
 section > button {
@@ -145,7 +146,7 @@ section > button:hover{
 
 #tarefas_adicionadas #deleta:hover {
     background-color: red;
-    border: 1.75px solid black;
+    border: 1.5px solid black;
 }
 
 footer{
@@ -156,6 +157,7 @@ footer{
     justify-content: center;
     background-color: cornflowerblue;
     height: 140px;
+    margin-top: 5px;
     align-items: center;
     justify-content: center;
     font-size: 15px;

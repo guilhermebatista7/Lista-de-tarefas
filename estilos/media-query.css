@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    header > h1{
+        font-size: 38px;
+    }
+
+    section #tarefa{
+        width: 470px;
+    }
+
+    #tarefas_adicionadas .conteudo{
+        width: 450px;
+        display: flex;
+    }
+
+    #tarefas_adicionadas p{
+        font-size: 20px;
+    }
+
+    #tarefas_adicionadas #deleta{
+        font-size: 15px;
+        right: calc(100% - 400px);
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    footer span{
+        font-size: 16px;
+    }
+
+    footer a{
+        font-size: 19px;
+    }
+}
